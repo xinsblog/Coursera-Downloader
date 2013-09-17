@@ -1,0 +1,14 @@
+{
+	"name": "Extracter",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "Coursera Downloader - Extract Part",
+	"browser_action": {
+		"default_icon": "icon.gif",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"tabs", "chrome://*/*"
+	]
+}
+
