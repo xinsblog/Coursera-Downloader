@@ -119,7 +119,7 @@ class Parser:
 
 if __name__ == '__main__':
     parser = Parser('course_page/RS.htm', 'parser.conf')
-    # parser.printAll()
+    parser.printAll()
     parser.printAllSlides()
     parser.printAllVideos()
     parser.printAllSubtitles()
