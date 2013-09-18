@@ -1,4 +1,4 @@
 Coursera-Downloader
 ===================
 
-A download tools for coursera online classes.
+A package of download tools for coursera online classes.
