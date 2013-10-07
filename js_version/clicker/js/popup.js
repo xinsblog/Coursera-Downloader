@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('#videos').click(function(){
 		console.log('videos');
 		chrome.tabs.executeScript(null,
-							{file: "js/jquery-1.10.2.min.js"});
+							{file: "js/jquery-1.10.2.min.js"});		
 		chrome.tabs.executeScript(null,
                            {file: "js/videos.js"});
 	});
