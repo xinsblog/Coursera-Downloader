@@ -23,10 +23,8 @@ var mapFunc = function(downloadNo) {
 	for(var i=0; i<sections.length; i++) {
 		var items = $(sections[i]).children('li');
 		acc += items.length;
-		console.log(acc);
 		countArr.push(acc);
 	}
-	console.log(countArr);
 	
 	var limits = downloadNo.split('-');
 	var first = parseInt(limits[0]);
@@ -38,8 +36,6 @@ var mapFunc = function(downloadNo) {
 	else 
 		firstCount = countArr[first-2]+1;
 	var lastCount = countArr[last-1];
-	console.log(firstCount);
-	console.log(lastCount);
 	
 	var links = $('a');
 	var mapLinks = new Array();
@@ -54,7 +50,7 @@ var mapFunc = function(downloadNo) {
 		if( count >= firstCount && flag) {
 			mapLinks.push(url);
 		}
-		if( count > lastCount) {
+		if( count >= lastCount) {
 			break;
 		}
 	}
